@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="Maven 1" modules="sandbox">
+      <option name="deprecationWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="C:\Users\MonMien\IdeaProjects\sandbox\target/.scala_dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 2" modules="hierarchy">
+      <option name="deprecationWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="C:\Users\MonMien\IdeaProjects\sandbox\hierarchy\target/.scala_dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 3" modules="ml" />
+    <profile name="Maven 4" modules="gatling">
+      <option name="deprecationWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="C:\Users\MonMien\IdeaProjects\sandbox\gatling\target/.scala_dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 5" modules="embedded-postgres">
+      <option name="deprecationWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="C:\Users\MonMien\IdeaProjects\sandbox\embedded-postgres\target/.scala_dependencies" />
+      </parameters>
+    </profile>
+  </component>
+</project>
