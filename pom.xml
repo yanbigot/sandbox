@@ -9,10 +9,12 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>misc</module>
         <module>ml</module>
-        <module>hierarchy</module>
         <module>gatling</module>
         <module>embedded-postgres</module>
+        <module>spark</module>
+        <module>finatra</module>
     </modules>
 
     <dependencies>
@@ -26,6 +28,11 @@
             <groupId>org.scala-lang</groupId>
             <artifactId>scala-library</artifactId>
             <version>2.11.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.11.11</version>
         </dependency>
         <dependency>
             <groupId>org.scala-lang</groupId>

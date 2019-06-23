@@ -1,11 +1,9 @@
 package com.yb
 
 import com.opentable.db.postgres.embedded.EmbeddedPostgres
-import java.sql.ResultSet
 
-import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
-
+//TODO find a way to restore a dump ...
 object EmbeddedPostgresTest {
   private[this] val pg = EmbeddedPostgres.start
 
@@ -32,10 +30,6 @@ object EmbeddedPostgresTest {
   private[this] val TIME = 92
   private[this] val TIMESTAMP = 93
   private[this] val OTHER = 1111
-
-  def restore(): Unit ={
-    pg.getPostgresDatabase.getConnection.createStatement().
-  }
 
   def withConnection(q: String): Unit = {
     try {

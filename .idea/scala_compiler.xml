@@ -17,7 +17,7 @@
         <parameter value="C:\Users\MonMien\IdeaProjects\sandbox\hierarchy\target/.scala_dependencies" />
       </parameters>
     </profile>
-    <profile name="Maven 3" modules="ml" />
+    <profile name="Maven 3" modules="ml,spark" />
     <profile name="Maven 4" modules="gatling">
       <option name="deprecationWarnings" value="true" />
       <option name="featureWarnings" value="true" />
@@ -32,6 +32,19 @@
       <parameters>
         <parameter value="-dependencyfile" />
         <parameter value="C:\Users\MonMien\IdeaProjects\sandbox\embedded-postgres\target/.scala_dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 6" modules="misc">
+      <option name="deprecationWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="C:\Users\MonMien\IdeaProjects\sandbox\misc\target/.scala_dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 7" modules="finatra,search">
+      <parameters>
+        <parameter value="-nobootcp" />
       </parameters>
     </profile>
   </component>

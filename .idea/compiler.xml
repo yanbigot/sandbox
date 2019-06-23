@@ -7,15 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="embedded-postgres" />
+        <module name="finatra" />
         <module name="gatling" />
-        <module name="hierarchy" />
+        <module name="misc" />
         <module name="ml" />
+        <module name="spark" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="search" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ml" options="-g" />
+      <module name="spark" options="-g" />
     </option>
   </component>
 </project>
