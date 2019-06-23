@@ -56,6 +56,20 @@ object HackerRank_01 {
     "abcdefghijklmnopqrstuvwxyz".toCharArray.map(_.toInt).foreach(println)
   }
 
+  def gameOfThrones(s: String): String = {
+    val m = s.toCharArray.
+      foldLeft(Map.empty[String, Int])((map, value) => map ++ Map(value.toString -> (map.getOrElse(value.toString, 0) + 1)))
+
+    if(m.count(_._2 % 2 != 0)> 1)
+      "NO"
+    else
+      "YES"
+  }
+
+  def camelcase(s: String): Int = {
+    s.toCharArray.count(_.isUpper) + 1
+
+  }
   def biggerIsGreater(w: String): String = {
     val inted = w.toCharArray.map(_.toInt)
     var success = false
