@@ -11,7 +11,7 @@
 
     <artifactId>embedded-postgres</artifactId>
     <properties>
-        <postgres.version>42.1.1</postgres.version>
+        <postgres.version>42.3.3</postgres.version>
         <pg-embedded.version>0.7.1</pg-embedded.version>
     </properties>
     <dependencies>
